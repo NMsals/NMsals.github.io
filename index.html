@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cita Médica</title>
+</head>
+<body bgcolor = "#b6ffff">
+
+    <h1 >Hospital Central</h1>
+    <table border="1">
+        <tr>
+            <th>Imágenes</th>
+            <th>Horario de Atención</th>
+            <th>Teléfonos de Emergencia</th>
+        </tr>
+        <tr>
+            <td><img src="https://png.pngtree.com/png-clipart/20200727/original/pngtree-health-logo-design-logo-for-the-clinic-pharmaceutical-company-logo-of-png-image_5156715.jpg" width="150" height="150" align="right"/>
+
+ /></td>
+            <td>Lunes a Viernes: 8:00 AM - 5:00 PM<br>Sábados: 9:00 AM - 1:00 PM</td>
+            <td>5558-8435</td>
+        </tr>
+    </table>
+
+    <h2>Reservación de Cita Médica</h2>
+    <form action="submit.html" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="consulta">Tipo de Consulta:</label>
+        <select id="consulta" name="consulta" required>
+            <option value="rutina">Consulta de rutina</option>
+            <option value="emergencia">Emergencia</option>
+            <option value="examenes">Exámenes médicos</option>
+            <option value="rayosx">Rayos X</option>
+            <option value="ultrasonido">Ultrasonido</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
